@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 app = Flask(__name__)
+#creating a flask app
 
 @app.route('/')
 def index():
@@ -21,3 +22,7 @@ def greet():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
+
+# docker run -p 5000:5000 mlops-docker-demo\.
+# docker tag mlops-docker-demo prashantsk960/mlops-docker-demo:latest1
+# docker push prashantsk960/mlops-docker-demo:latest1
